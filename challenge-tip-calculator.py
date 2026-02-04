@@ -6,7 +6,7 @@ rand_tip_percentage = random.randint(3, 5)
 
 rand_tip_percentage_2 = random.randint(6, 13)
 
-rand_tip_percentage_3 = random.randint(15, 30)
+rand_tip_percentage_3 = random.randint(17, 30)
 
 rand_int = random.randint(20, 200)
 print(f"Bill: {rand_int} $")
@@ -25,16 +25,39 @@ if (rand_service > 7 and rand_service < 11):
 
 
 
+#if (rand_service > 0 and rand_service < 5):
+#   print (rand_int * (rand_tip_percentage / 100),"$")
+
+# f (rand_service > 4 and rand_service < 8):
+#   print (rand_int * (rand_tip_percentage_2 / 100),"$")
+
+#if (rand_service > 7 and rand_service < 11):
+#   print (rand_int * (rand_tip_percentage_3 / 100),"$")
+
+x=str(rand_int * (rand_tip_percentage / 100))
+y=str(rand_int * (rand_tip_percentage_2 / 100))
+z=str(rand_int * (rand_tip_percentage_3 / 100))
+
 if (rand_service > 0 and rand_service < 5):
-   print (rand_int * (rand_tip_percentage / 100),"$")
+   print (f"Tip Amount:" + x + "$")
+
 
 if (rand_service > 4 and rand_service < 8):
-   print (rand_int * (rand_tip_percentage_2 / 100),"$")
+   print (f"Tip Amount:" + y + "$")
 
 if (rand_service > 7 and rand_service < 11):
-   print (rand_int * (rand_tip_percentage_3 / 100),"$")
+   print (f"Tip Amount:" + z + "$")
 
-
+x=str(x)
+y=str(y)
+z=str(z)
+rand_int=str(rand_int)
 
 if (rand_service > 0 and rand_service < 5):
-   print (f"Tip Amount:" (rand_int * (rand_tip_percentage / 100)* rand_int))
+   print (f"Total:" rand_int + x + "$")
+
+if (rand_service > 0 and rand_service < 5):
+   print (f"Total:" rand_int + y + "$")
+
+if (rand_service > 0 and rand_service < 5):
+   print (f"Total:" rand_int + z + "$")
