@@ -34,9 +34,9 @@ if (rand_service > 7 and rand_service < 11):
 #if (rand_service > 7 and rand_service < 11):
 #   print (rand_int * (rand_tip_percentage_3 / 100),"$")
 
-x=str(rand_int * (rand_tip_percentage / 100))
-y=str(rand_int * (rand_tip_percentage_2 / 100))
-z=str(rand_int * (rand_tip_percentage_3 / 100))
+x=(rand_int * (rand_tip_percentage / 100))
+y=(rand_int * (rand_tip_percentage_2 / 100))
+z=(rand_int * (rand_tip_percentage_3 / 100))
 
 if (rand_service > 0 and rand_service < 5):
    print (f"Tip Amount:" + x + "$")
@@ -48,16 +48,16 @@ if (rand_service > 4 and rand_service < 8):
 if (rand_service > 7 and rand_service < 11):
    print (f"Tip Amount:" + z + "$")
 
-x=str(x)
-y=str(y)
-z=str(z)
-rand_int=str(rand_int)
+x=(rand_int * (rand_tip_percentage / 100))
+y=(rand_int * (rand_tip_percentage_2 / 100))
+z=(rand_int * (rand_tip_percentage_3 / 100))
+rand_int=(rand_int)
 
 if (rand_service > 0 and rand_service < 5):
-   print (f"Total:" rand_int + x + "$")
+   print (f"Total:" + rand_int + x + "$")
 
-if (rand_service > 0 and rand_service < 5):
-   print (f"Total:" rand_int + y + "$")
+if (rand_service > 4 and rand_service < 8):
+   print (f"Total:" + rand_int + y + "$")
 
-if (rand_service > 0 and rand_service < 5):
-   print (f"Total:" rand_int + z + "$")
+if (rand_service > 7 and rand_service < 11):
+   print (f"Total:" + rand_int + z + "$")
